@@ -1,0 +1,13 @@
+def solution(phone_number):
+    answer=''
+    cnt =0
+    for i in range(0,len(phone_number),1):
+        if cnt==len(phone_number)-4:
+            break
+        else:
+            answer+='*'
+            cnt+=1
+
+    answer += str(phone_number[-4:])
+        
+    return answer
